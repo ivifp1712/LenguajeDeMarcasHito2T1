@@ -1,0 +1,265 @@
+/*
+
+header { grid-area: header; }
+nav { grid-area: nav; }
+section{ grid-area: text; }
+.vacio{ grid-area: text;}
+footer{grid-area: footer;}
+*/
+
+body{
+    background-image: linear-gradient(to right, rgb(40, 130, 247), rgb(228, 228, 34));
+    display: grid;
+    /*
+    grid-template-areas:
+        'header header header'
+        'nav text text'
+        'vacio text text'
+        'footer footer footer';
+    */
+
+    grid-template-columns: 4;
+    grid-template-rows: 5   ;
+    
+}
+
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+}
+
+th, td{
+    background-color: white;
+}
+
+nav{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border: 1px solid black;
+    background-color: rgb(217, 241, 243);
+    font-weight: bold;
+    margin-right: 5%;
+    padding: 1% 1%;
+    grid-row: 2/3;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-weight: bold;
+}
+
+
+#duda > h2, nav > h2{
+    text-align: center;
+}
+img#logo{
+    float: right;
+    display: block;
+    width: 10%;
+}
+img#fdudas{
+    float: right;
+    width: 10%;
+}
+
+
+
+/*
+nav{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border: 1px solid black;
+    background-color: rgb(217, 241, 243);
+    padding: 1% 1%;
+    margin: 5%;
+}
+
+*/
+
+
+
+section{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    border: 1px solid black;
+    background-color: rgb(217, 241, 243);
+    padding: 1% 1%;
+    grid-row: 2/4;
+    
+}
+
+
+
+
+/*
+.text{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    border: 1px solid black;
+    background-color: rgb(217, 241, 243);
+    padding: 1% 1%;
+    margin: 5%;
+}
+*/
+
+a:link, a:visited, a:active, a:hover{
+    text-decoration:none;
+    color: white;
+}
+
+nav > p > a:link, nav > p > a:visited, nav > p > a:active{
+    text-decoration:none;
+    color: black;
+}
+
+nav > p > a:hover{
+    color: red;
+}
+
+
+header{
+    background-color: black;
+    margin-bottom: 2%;
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+
+header > h1{
+    color: white;
+    text-align: center;
+    text-shadow: 2px 3px red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+footer{
+    grid-column: 1/5;
+    grid-row: 5/5;
+}
+
+footer > p#links{
+    float: right;
+}
+
+footer > p{
+    color: white;
+}
+
+footer > p > a:link, footer > p > a:visited, footer > p > a:active{
+    text-decoration:none;
+    color: black;
+}
+
+footer > p > a#tit:link, footer > p > a#tit:visited, footer > p > a#tit:active{
+    text-decoration:none;
+    color: white;
+}
+
+
+
+section > div#contacto > fieldset{
+    background-color: rgb(130, 211, 211);
+    color: black;
+    font-weight: bold;
+}
+
+section > div#contacto > fieldset > legend{
+    color: black;
+    font-weight: bold;
+}
+
+section > div#contacto > fieldset > p{
+    color: black;
+    font-weight: bold;
+}
+
+
+th#ven, th#desven{
+    width:40%; 
+    font-weight: bold;
+}
+
+@media all and (max-width:900px) {
+    body{
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: 5;
+    }
+    
+    header{
+        grid-template-columns: 1;
+        grid-row: 1;
+    }
+    section{
+        grid-template-columns: 1;
+        grid-row: 3;
+    }
+    
+    nav{
+        grid-template-columns: 1;
+        grid-row: 2;
+        margin-bottom: 1%;
+        margin-right: 0%;
+    }
+    footer{
+        grid-template-columns: 1;
+        grid-row: 4;
+    }
+    
+   
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 25%;
+        width: 75%;
+        
+    }
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 25%;
+		padding-right: 10px;
+		white-space: nowrap;
+	}
+	
+	/*
+	Label the data
+    
+	*/
+	td:nth-of-type(1):before { content: "Tipo"; width: 20%;}
+	td:nth-of-type(2):before { content: "Ventajas"; width: 20%;}
+    td:nth-of-type(3):before { content: "Desventajas"; width: 20%;}
+    
+    fieldset{   
+        width:50%;
+    }
+
+    }
+    /*
+    @media only screen and (min-width : 320px) and (max-width : 480px) 
+	{
+		table { width: 500px; }
+		.descarto {display:none;}
+	}
+    */

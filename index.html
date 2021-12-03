@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Ez Mode! - Inicio </title>
+    <link rel="stylesheet" href="styles/style_index.css">
+    <meta name="description" content="Aprende Python de una manera fácil y sencilla con mi web. Encontraras las primeras lecciones muy útiles y un pequeño formulario de dudas en caso de que no entendieras algo.">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+<body>
+    <header>
+        <h1 id="titulo">Python Ez Mode</h1>
+    </header>
+    <nav>
+        <h2>Links de la página </h2>
+        <p><a href="#intro">Introducción</a></p>
+        <p><a href="#duda">¿Por qué Python?</a></p>
+        <p><a href="#tdatos">Tipos de Datos</a></p>
+        <p><a href="#contacto">¿Tienes dudas?</a></p>
+        
+    </nav>
+
+    <section>
+        <div id="intro">
+            <img id="logo"src="img/pythonlogo.png" alt="Logo de Python">
+            <h2>Introducción</h2>
+            <p>En esta página podrás encontrar toda la información básica que necesites de Python, sus principales funciones, tipos de datos, etc...</p>
+            <p>¡Disfruta programando con Python! </p>
+            
+        </div>
+        <div id="duda">
+            <h2>¿Por qué Python?</h2>
+            <p>Python es uno de los lenguajes más usados del mundo, ¿pero por qué?</p>
+            <p>La principal razón es por ser un lenguaje multiplataforma e interpretado. ¿Cuáles son sus ventajas? Aquí una tabla con las diferencias entre lenguaje compilado e interpretado</p>
+            <table title="Ventajas de Lenguaje Compilado e Interpretado">
+                <thead>
+                <tr>
+                  <th> Tipos </th>
+                  <th id="ven" style="width:40%; font-weight: bold;">Ventajas</th>
+                  <th id="desven" style="width:40%; font-weight: bold;">Desventajas</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td style="font-weight: bold;"> Compilado</td>
+                  <td>Puede separarse del entorno de desarrollo, ejecutarse de forma independiente en una plataforma específica y tiene una mayor eficiencia operativa.</td>
+                  <td>No se puede trasplantar; es necesario trasplantar, recopilación del código fuente.</td>
+                  
+                  
+                </tr>
+                <tr>
+                  <td style="font-weight: bold;"></tdstyle>Interpretado</td>
+                  <td>La multiplataforma es más fácil, a expensas de la eficiencia de ejecución del programa.</td>
+                  <td>Baja eficiencia, no se puede ejecutar de forma independiente del intérprete</td>
+                </tr>
+                </tbody>
+              </table>
+        </div>
+        <div id="tdatos">
+            <h2>Tipos de Datos</h2>
+            <p>En Python, existen diferentes tipos de datos:</p>
+            <ul>
+                <li>Datos básicos:
+                    <ul>
+                        <li>Los booleanos</li>
+                        <li>Los numéricos (enteros, punto flotante y complejos) </li>
+                        <li>Las cadenas de caracteres</li>
+                    </ul>
+                </li>
+                <li>Otros tipos de datos:
+                    <ul>
+                        <li>Secuencias: Los tipos list, tuple y range</li>
+                        <li>Mapas: El tipo dict</li>
+                        <li>Conjuntos: El tipo set</li>
+                        <li>Iteradores</li>
+                        <li>Clases</li>
+                        <li>Instancias</li>
+                        <li>Excepciones</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Datos Básicos</h3>
+                <h4>Los booleanos</h4>
+                    <p>Al igual que en otros lenguajes de programación, en Python existe el tipo bool o booleano. Es un tipo de dato que permite almacenar dos valores True o False.</p>
+                <h4>Los numéricos</h4>
+                    <p>Python distingue entre enteros, números de punto flotante y números complejos.</p>
+                    <ul>
+                        <li>Int: Número entero con precisión fija.</li>
+                        <li>Long: Número entero en caso de overflow.</li>
+                        <li>Float: Coma flotante de doble precisión.</li>
+                        <li>Complex: Parte real y parte imaginaria j.</li>
+                    </ul>
+                <h4>Las cadenas de caractéres</h4>
+                    <p>Se almacenas caractéres en forma de cadena, pudiendo, por ejemplo, de una palabra ser utilizada cada letra individualmente.</p>
+            <h3>Datos Básicos</h3>
+                <h4>Secuencias</h4>
+                <p>Existen varios tipos: </p>
+                <ol>
+                    <li>List: Para definir una, se debe escribir es entre corchetes, separando sus elementos con comas cada uno.</li>
+                    <li>Tuple: La clase tuple en Python es un tipo contenedor, compuesto, que en un principio se pensó para almacenar grupos de elementos heterogéneos, aunque también puede contener elementos homogéneos.</li>
+                    <li>Range: Es un tipo de dato que representa una secuencia de números inmutable.</li>
+                </ol>
+                <h4>Mapas</h4>
+                <p>La clase dict de Python es un tipo mapa que asocia claves a valores. A diferencia de los tipos secuenciales (list, tuple, range o str), que son indexados por un índice numérico, los diccionarios son indexados por claves.</p>
+        </div>
+        <div id="fprincipal">
+            <h2>Funciones principales</h2>
+                <h3>Print()</h3>
+                    <p>En los programas, para que python nos muestre texto o variables hay que utilizar la función print(). La función print() permite mostrar texto en pantalla. El texto a mostrar se escribe como argumento de la función:</p>
+                    <p>Ejemplo: print("Hola Mundo") --> Output: Hola Mundo</p>
+                <h3>If()</h3>
+                    <p>La estructura de control if ... permite que un programa ejecute unas instrucciones cuando se cumplan una condición. En inglés "if" significa "si" (condición).</p>
+                    <p>La sintaxis de la construcción if es la siguiente:</p> 
+                    <p>&nbsp if condición:</p>
+                    <p>&nbsp &nbsp aquí van las órdenes que se ejecutan si la condición es cierta</p>
+                    <p>&nbsp &nbsp y que pueden ocupar varias líneas</p>
+                <h3>Input()</h3>
+                    <p>La función input() permite obtener texto escrito por teclado. Al llegar a la función, el programa se detiene esperando que se escriba algo y se pulse la tecla Intro, como muestra el siguiente ejemplo:</p>
+                    <p>&nbsp variable = input("Introduce tu nombre: ")</p> 
+
+
+        </div>
+        <div id="contacto">
+            <h2>¿Tienes dudas?</h2>
+            <p>¿Tienes alguna duda acerca de Python? ¡Pregúntanos!<img id="fdudas"alt="Muñeco de Dudas" src="img/dudas.png"></p>
+            <form action="procesa.php" method="get">
+                <fieldset>
+
+                    <legend><br>Datos personales:</legend>  
+                    <p>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" required>
+                    </p>
+                    <p>
+                        <label for="alias">Alias:</label>
+                        <input type="text" name="alias" required>
+                    </p>
+                    <p>
+                        <label for="direcciónEmail">Email para la respuesta:</label>
+                        <input type="email" name="email" required>
+                    </p>
+                    <p>
+                        <label>Duda:</label></p>
+                    <p>
+                        <textarea rows="5" cols="20"></textarea>
+                    </p>
+                    <p><input type="submit" value="Enviar Datos"></p>
+                    <p><input type="reset" value="Limpiar datos"></p> 
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    <footer> 
+        <p id="links"><a href="#intro">Introducción</a>
+        <a href="#duda">¿Por qué Python?</a>
+        <a href="#tdatos">Tipos de Datos</a>
+        <a href="#contacto">¿Tienes dudas?</a></p>
+        <p>©<a id ="tit" href="#titulo">Python Ez Mode 2021</a> - Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
